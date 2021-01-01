@@ -14,6 +14,7 @@ module.exports = {
         secondary: "#49742E",
         main: "#FFF5EC",
         "secondary-100": "rgba(73, 116, 46, .75)",
+        "light-white": "rgba(255,255,255,.46)",
       },
     },
   },
