@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
 
-      <main>{children}</main>
+      <main className="bg-main min-h-screen min-w-screen">{children}</main>
     </>
   )
 }
