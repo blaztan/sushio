@@ -4,7 +4,7 @@ import sushi from "../assets/img_01.jpg"
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-right no-repeat">
+    <section className="min-h-screen bg-right no-repeat mb-32">
       <div
         style={{ backgroundImage: `url(${pattern})` }}
         className="h-full w-1/2 absolute right-0 bg-no-repeat"
@@ -17,7 +17,7 @@ const Hero = () => {
 
           <div className="relative  h-full">
             <h1 className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-9xl text-primary capitalize font-bold font-main">
-              Japanese <br /> Restaurant
+              Japanese <br /> &nbsp; Restaurant
             </h1>
             <div className="flex items-end h-full">
               <p className="text-2xl text-secondary font-custom capitalize p-6 bg-main">
