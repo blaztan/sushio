@@ -27,7 +27,7 @@ const Service = () => {
   return (
     <section className="pt-32">
       <div className="max-w-screen-2xl mx-auto">
-        <Title title={data.title} text={data.text} />
+        <Title title={data.title} text={data.content} />
 
         <div className="grid grid-cols-3 gap-10">
           <ServiceCard name={data.service1} icon={faPhoneVolume} />

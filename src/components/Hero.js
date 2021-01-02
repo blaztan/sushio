@@ -1,6 +1,8 @@
 import React from "react"
 import pattern from "../assets/pattern.svg"
-import sushi from "../assets/img_01.jpg"
+import sushi from "../assets/bg.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUtensils } from "@fortawesome/free-solid-svg-icons"
 
 const Hero = () => {
   return (
@@ -20,7 +22,10 @@ const Hero = () => {
               Japanese <br /> &nbsp; Restaurant
             </h1>
             <div className="flex items-end h-full">
-              <p className="text-2xl text-secondary font-custom capitalize p-6 bg-main">
+              <p className="text-2xl font-bold text-secondary font-custom capitalize p-6 bg-main">
+                <span className="mr-2 text-3xl text-secondary">
+                  <FontAwesomeIcon icon={faUtensils} />
+                </span>{" "}
                 view full menu
               </p>
             </div>

@@ -21,7 +21,7 @@ const Opening = () => {
   return (
     <section
       style={{ backgroundImage: `url(${sushi})` }}
-      className="py-36 bg-right-top bg-no-repeat min-h-screen flex items-center"
+      className="pt-36  bg-right-top bg-no-repeat min-h-screen flex items-center"
     >
       <div className="max-w-screen-2xl mx-auto">
         <div className="flex space-x-6 items-center justify-center mb-20">
