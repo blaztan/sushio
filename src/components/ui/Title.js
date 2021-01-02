@@ -5,7 +5,7 @@ const Title = ({ title, text }) => {
     <div className="flex justify-between items-center mb-20">
       <div className="flex space-x-4 items-center">
         <span className="h-28 w-4 bg-secondary"></span>
-        <h2 className="text-primary leading-snug w-1/2 text-5xl font-main font-bold capitalize">
+        <h2 className="text-primary leading-snug w-3/5 text-5xl font-main font-bold capitalize">
           {title}
         </h2>
       </div>

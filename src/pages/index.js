@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Service from "../components/Service"
 import Opening from "../components/Opening"
+import Menu from "../components/Menu"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Booking />
     <Service />
     <Opening />
+    <Menu />
   </Layout>
 )
 
