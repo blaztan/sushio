@@ -86,9 +86,9 @@ const Menu = () => {
 
   return (
     <section className="min-h-screen">
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto px-4 2xl:px-0">
         <Title title={menuData.title} text={menuData.content} />
-        <div className="mb-10 d-flex space-x-12 text-center">
+        <div className="mb-10 d-flex md:space-x-12 flex-wrap space-x-4 space-y-4  text-center">
           {["main", "dessert", "drink"].map((cat, i) => (
             <button
               onClick={() => setCurrent(cat)}
@@ -96,7 +96,7 @@ const Menu = () => {
               capitalize text-white text-2xl 
               rounded focus:outline-none py-2 px-6 
               ${cat === current ? "bg-green-800" : "bg-secondary"}
-              hover:bg-green-70 `}
+              hover:bg-green-700 `}
             >
               {cat}
             </button>

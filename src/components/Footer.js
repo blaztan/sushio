@@ -16,17 +16,17 @@ import FormInput from "./ui/FormInput"
 const Footer = () => {
   return (
     <section className="py-32">
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto px-4 2xl:px-0">
         <div className="flex space-x-6 items-center justify-center mb-20">
-          <span className="h-2 w-16 rounded bg-primary"></span>
-          <h2 className="text-6xl text-primary capitalize font-bold font-main">
+          <span className="h-2 md:w-16 w-10 rounded bg-primary"></span>
+          <h2 className="lg:text-6xl text-center md:text-5xl text-2xl text-primary capitalize font-bold font-main">
             Join Our News Letter
           </h2>
-          <span className="h-2 w-16 rounded bg-primary"></span>
+          <span className="h-2 md:w-16 w-10 rounded bg-primary"></span>
         </div>
-        <form className="flex space-x-6 justify-center mb-20">
+        <form className="flex sm:space-x-6 sm:space-y-0 space-y-6 flex-wrap md:justify-center mb-20">
           <FormInput
-            className="w-96"
+            className="sm:w-96 w-75"
             type="email"
             placeholder="Enter Your Email"
           />
@@ -34,7 +34,7 @@ const Footer = () => {
             Submit
           </button>
         </form>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-wrap">
           <div className="mb-6">
             <div className="flex space-x-4">
               <FontAwesomeIcon
@@ -62,7 +62,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faTwitter} />
           </div>
         </div>
-        <div className="text-center mt-10">
+        <div className="md:text-center  mt-10">
           <p className="text-2xl text-black font-custom font-medium">
             &copy; copyright 2021 made with
             <FontAwesomeIcon className="ml-2 text-red-700" icon={faHeart} /> by

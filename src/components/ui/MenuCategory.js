@@ -5,7 +5,7 @@ const MenuCategory = ({ data }) => {
   const arr = [1, 2, 3, 4, 5, 6]
 
   return (
-    <div className="grid grid-cols-2 gap-4 max-w-screen-lg mx-auto">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 max-w-screen-lg mx-auto">
       {arr.map((num, i) => (
         <div key={i} className="flex items-center space-x-6 mb-6">
           <div className="rounded-full h-40 w-40 overflow-hidden">

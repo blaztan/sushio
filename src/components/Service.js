@@ -25,11 +25,11 @@ const Service = () => {
 
   const data = markdownRemark.frontmatter
   return (
-    <section className="pt-32">
-      <div className="max-w-screen-2xl mx-auto">
+    <section>
+      <div className="max-w-screen-2xl mx-auto px-4 2xl-px-0">
         <Title title={data.title} text={data.content} />
 
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-10 gap-4">
           <ServiceCard name={data.service1} icon={faPhoneVolume} />
           <ServiceCard name={data.service2} icon={faBirthdayCake} />
           <ServiceCard name={data.service3} icon={faShippingFast} />

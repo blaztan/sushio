@@ -21,17 +21,17 @@ const Opening = () => {
   return (
     <section
       style={{ backgroundImage: `url(${sushi})` }}
-      className="pt-36  bg-right-top bg-no-repeat min-h-screen flex items-center"
+      className="my-28 md:bg-auto bg-contain bg-right-top bg-no-repeat min-h-screen flex items-center"
     >
-      <div className="max-w-screen-2xl mx-auto">
-        <div className="flex space-x-6 items-center justify-center mb-20">
+      <div className="max-w-screen-2xl mx-auto px-4 2xl:px-0">
+        <div className="flex md:space-x-6 space-x-4 items-center justify-center mb-20">
           <span className="h-2 w-16 rounded bg-primary"></span>
-          <h2 className="text-6xl text-primary capitalize font-bold font-main">
+          <h2 className="md:text-6xl text-center text-3xl text-primary capitalize font-bold font-main">
             {data.title}
           </h2>
           <span className="h-2 w-16 rounded bg-primary"></span>
         </div>
-        <div className="grid grid-cols-2 gap-10 justify-center max-w-screen-md mx-auto text-center">
+        <div className="grid sm:grid-cols-2 md:gap-10 grid-cols-1 gap-4 justify-center max-w-screen-md mx-auto text-center">
           <div>
             <h3 className="text-3xl text-secondary capitalize font-bold font-custom mb-6">
               {data.date1}

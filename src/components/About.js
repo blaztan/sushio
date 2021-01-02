@@ -45,10 +45,10 @@ const About = () => {
   const data = markdownRemark.frontmatter
 
   return (
-    <section className="min-h-screen flex items-center">
-      <div className="max-w-screen-2xl mx-auto">
+    <section className="pb-28 flex items-center">
+      <div className="max-w-screen-2xl mx-auto 2xl:px-0 px-4">
         <Title title={data.title} text={data.content} />
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
           <DishCard
             fluid={data.img1.childImageSharp.fluid}
             price={data.price1}
@@ -64,11 +64,11 @@ const About = () => {
             price={data.price3}
             name={data.name3}
           />
-        </div>
-        <div className="text-center mt-20">
-          <span className="font-bold font-cusom text-primary text-2xl capitalize">
-            View more
-          </span>
+          <div className="text-center self-center mt-20 lg:col-span-3">
+            <span className="font-bold font-cusom text-primary text-2xl capitalize">
+              View more
+            </span>
+          </div>
         </div>
       </div>
     </section>

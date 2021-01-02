@@ -1,32 +1,62 @@
 import React from "react"
-import pattern from "../assets/pattern.svg"
-import sushi from "../assets/bg.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUtensils } from "@fortawesome/free-solid-svg-icons"
+import Image from "./image"
+import { graphql, useStaticQuery } from "gatsby"
+import su from "../data/hero/su.png"
 
 const Hero = () => {
+  const { markdownRemark } = useStaticQuery(graphql`
+    query {
+      markdownRemark(frontmatter: { category: { eq: "hero" } }) {
+        frontmatter {
+          link
+
+          hero {
+            childImageSharp {
+              fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+
+          bg {
+            childImageSharp {
+              fluid(maxWidth: 200) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const data = markdownRemark.frontmatter
   return (
-    <section className="min-h-screen bg-right no-repeat mb-32">
-      <div
-        style={{ backgroundImage: `url(${pattern})` }}
-        className="h-full w-1/2 absolute right-0 bg-no-repeat"
-      ></div>
-      <div className="max-w-screen-2xl mx-auto">
-        <div className="grid grid-cols-2 h-screen items-center">
-          <div className="h-1/2 self-center w-full pr-10">
-            <img src={sushi} alt="sushi" className="w-full h-full" />
+    <section
+      style={{ backgroundImage: `url(${su})` }}
+      className=" xl:bg-right-top md:bg-right-bottom  bg-no-repeat"
+    >
+      <div className="max-w-screen-2xl mx-auto 2xl:px-0 px-4">
+        <div className="grid xl:grid-cols-2 grid-cols-1 py-20 min-h-screen items-center">
+          <div className=" self-center w-full pr-10">
+            <div className="w-full h-full">
+              <Image fluid={data.hero.childImageSharp.fluid} />
+            </div>
           </div>
 
-          <div className="relative  h-full">
-            <h1 className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-9xl text-primary capitalize font-bold font-main">
-              Japanese <br /> &nbsp; Restaurant
+          <div className="relative  xl:h-full">
+            <h1 className="xl:mb-0 mb-10 xl:absolute xl:top-1/2 xl:transform xl:-translate-y-1/2 2xl:text-9xl xl:text-7xl md:text-8xl text-5xl  text-primary capitalize font-bold font-main">
+              Japanese <br /> <span className="hidden sm:inline">&nbsp;</span>{" "}
+              Restaurant
             </h1>
-            <div className="flex items-end h-full">
-              <p className="text-2xl font-bold text-secondary font-custom capitalize p-6 bg-main">
+            <div className="flex xl:items-end xl:h-full pb-24 ">
+              <p className=" text-2xl font-bold text-secondary tracking-wide font-custom capitalize">
                 <span className="mr-2 text-3xl text-secondary">
                   <FontAwesomeIcon icon={faUtensils} />
                 </span>{" "}
-                view full menu
+                {data.link}
               </p>
             </div>
           </div>
