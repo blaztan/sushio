@@ -34,7 +34,7 @@ const Hero = () => {
 
   const data = markdownRemark.frontmatter
   return (
-    <section className="relative overflow-x-hidden">
+    <section className="relative overflow-x-hidden" id="home">
       <div
         style={{ backgroundImage: `url(${su})` }}
         className="absolute top-0 left-0 

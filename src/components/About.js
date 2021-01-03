@@ -45,7 +45,7 @@ const About = () => {
   const data = markdownRemark.frontmatter
 
   return (
-    <section className="pb-28 flex items-center">
+    <section className="pb-28 flex items-center" id="about">
       <div className="max-w-screen-2xl mx-auto 2xl:px-0 px-4">
         <Title title={data.title} text={data.content} />
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">

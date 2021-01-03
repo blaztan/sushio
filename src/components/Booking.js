@@ -3,7 +3,7 @@ import FormInput from "./ui/FormInput"
 
 const Booking = () => {
   return (
-    <section className="h-auto pb-28">
+    <section className="h-auto pb-28" id="booking">
       <div className="max-w-screen-2xl w-full mx-auto 2xl:px-0 px-4">
         <div className="grid lg:grid-cols-3 grid-cols-1 ">
           <div className="lg:col-span-2 row-start-2 lg:row-start-auto">

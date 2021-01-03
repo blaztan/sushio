@@ -85,12 +85,13 @@ const Menu = () => {
   const categoryData = allMarkdownRemark.edges
 
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen" id="menu">
       <div className="max-w-screen-2xl mx-auto px-4 2xl:px-0">
         <Title title={menuData.title} text={menuData.content} />
         <div className="list-animation mb-10 d-flex md:space-x-12 flex-wrap space-x-4 space-y-4  text-center">
           {["main", "dessert", "drink"].map((cat, i) => (
             <button
+              key={`button-${i}`}
               onClick={() => setCurrent(cat)}
               className={`item font-custom font-medium 
               capitalize text-white text-2xl 

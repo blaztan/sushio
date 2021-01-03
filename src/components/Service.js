@@ -26,7 +26,7 @@ const Service = () => {
   const data = markdownRemark.frontmatter
   return (
     <section>
-      <div className="max-w-screen-2xl mx-auto px-4 2xl-px-0">
+      <div className="max-w-screen-2xl mx-auto px-4 2xl-px-0" id="service">
         <Title title={data.title} text={data.content} />
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-10 gap-4">

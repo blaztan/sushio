@@ -42,6 +42,7 @@ module.exports = {
         postCssPlugins: [require("tailwindcss")("./tailwind.config.js")],
       },
     },
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: { tailwind: true },

@@ -15,7 +15,7 @@ import FormInput from "./ui/FormInput"
 
 const Footer = () => {
   return (
-    <section className="py-32">
+    <section className="py-32" id="contact">
       <div className="max-w-screen-2xl mx-auto px-4 2xl:px-0">
         <div className="flex space-x-6 items-center justify-center mb-20">
           <span className="slide-left h-2 md:w-16 w-10 rounded bg-primary"></span>
