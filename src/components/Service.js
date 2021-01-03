@@ -30,9 +30,21 @@ const Service = () => {
         <Title title={data.title} text={data.content} />
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-10 gap-4">
-          <ServiceCard name={data.service1} icon={faPhoneVolume} />
-          <ServiceCard name={data.service2} icon={faBirthdayCake} />
-          <ServiceCard name={data.service3} icon={faShippingFast} />
+          <ServiceCard
+            className="slide-left"
+            name={data.service1}
+            icon={faPhoneVolume}
+          />
+          <ServiceCard
+            className="slide-down"
+            name={data.service2}
+            icon={faBirthdayCake}
+          />
+          <ServiceCard
+            className="slide-right"
+            name={data.service3}
+            icon={faShippingFast}
+          />
         </div>
       </div>
     </section>

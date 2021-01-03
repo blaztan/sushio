@@ -1,9 +1,9 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const ServiceCard = ({ name, icon }) => {
+const ServiceCard = ({ name, icon, className = "" }) => {
   return (
-    <div className="rounded bg-main-100 p-14  text-center h-92">
+    <div className={`${className} rounded bg-main-100 p-14  text-center h-92`}>
       <div className="mb-6 text-9xl text-secondary">
         <FontAwesomeIcon icon={icon} />
       </div>

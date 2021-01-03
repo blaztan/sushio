@@ -18,11 +18,11 @@ const Footer = () => {
     <section className="py-32">
       <div className="max-w-screen-2xl mx-auto px-4 2xl:px-0">
         <div className="flex space-x-6 items-center justify-center mb-20">
-          <span className="h-2 md:w-16 w-10 rounded bg-primary"></span>
-          <h2 className="lg:text-6xl text-center md:text-5xl text-2xl text-primary capitalize font-bold font-main">
+          <span className="slide-left h-2 md:w-16 w-10 rounded bg-primary"></span>
+          <h2 className="slide-up lg:text-6xl text-center md:text-5xl text-2xl text-primary capitalize font-bold font-main">
             Join Our News Letter
           </h2>
-          <span className="h-2 md:w-16 w-10 rounded bg-primary"></span>
+          <span className="slide-right h-2 md:w-16 w-10 rounded bg-primary"></span>
         </div>
         <form className="flex sm:space-x-6 sm:space-y-0 space-y-6 flex-wrap md:justify-center mb-20">
           <FormInput
@@ -30,7 +30,7 @@ const Footer = () => {
             type="email"
             placeholder="Enter Your Email"
           />
-          <button className="rounded text-white font-bold text-xl px-6 py-2 bg-primary font-custom">
+          <button className="slide-right rounded text-white font-bold text-xl px-6 py-2 bg-primary font-custom">
             Submit
           </button>
         </form>

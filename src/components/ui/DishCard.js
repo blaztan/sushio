@@ -1,9 +1,9 @@
 import React from "react"
 import Image from "../image"
 
-const DishCard = ({ fluid, name, price }) => {
+const DishCard = ({ fluid, name, price, className = "" }) => {
   return (
-    <div className="relative h-96 rounded-md">
+    <div className={`${className} relative h-96 rounded-md`}>
       <div className="w-100 h-96 rounded-md overflow-hidden">
         <Image fluid={fluid} />
       </div>
